@@ -15,14 +15,3 @@ export async function GET() {
     return NextResponse.json({ message: '❌ Помилка підключення до бази!', error: errorMessage });
   }
 }
-
-// export async function GET() {
-//   const tasks = await Task.findAll(); // Отримуємо всі завдання
-//   return NextResponse.json(tasks);
-// }
-
-// export async function POST(request: Request) {
-//   const { title, description, status } = await request.json();
-//   const task = await Task.create({ title, description, status });
-//   return NextResponse.json(task);
-// }
